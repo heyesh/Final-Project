@@ -1,14 +1,60 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   <title>Hello World </title>
 
 </head>
 
 <body>
-<div>
-  <h1> Hello Universe!!12345 </h1>
-  <h2> Welcome to my site! </h2>
-</div>
+  <div class="header">
+    <h1>Sale!</h1>
+    <p>Students get 10%</p>
+    <p>Code: <button class="button1">STUD</button></p>
+  </div>
+
+  <div class="contrast">
+
+      <ul>
+        <li>Sale</li>
+        <li>New in</li>
+        <li>Dresses</li>
+        <li>Jeans</li>
+        <li>Shoes</li>
+      </ul>
+  </div>
+
+  <!-- background image-->
+<section>
+  <img src="front.jpg" alt="Main image" usemap="#mainimage" width=800px>
+
+<map name="mainimage">
+  <area shape="circle" coords="200,200,50" alt="girl" href="women.htm">
+
+</map>
+</section>
+  <!-- Slide Show -->
+<section>
+  <img class="mySlides" src="mainpage.jpg" style="width:50%">
+  <img class="mySlides" src="mainpage2.jpg" style="width:50%">
+  <img class="mySlides" src="img_chicago.jpg" style="width:50%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>

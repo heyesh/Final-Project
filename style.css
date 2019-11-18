@@ -50,6 +50,7 @@ div.contrast {
   flex-direction: column;
 }
 
+
 input[type=text] {
   width: 130px;
   box-sizing: border-box;
@@ -85,6 +86,28 @@ div.buzz{
   align-items: center;
 } */
 
+}
+div.form {
+  display: flex;
+  align-items: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 60%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
 .footer {
   left: 0;
   bottom: 0;

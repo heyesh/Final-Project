@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <title>G-Tek</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device=width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+</head>
+
+<body>
+  <div class="header">
+    <h1>Sale!</h1>
+    <h2>Students get 10%</h2>
+  </div>
+  <p>
+    <h1>Customer Service</h1>
+  </p>
+  <p>
+    <h2>Contact us direct:</h2>
+  </p>
+  <h3>Call: 01325479862</h3>
+  <h3>Email: g-tek@outlook.com</h3>
+  <h3>Facebook: G-Tek</h3>

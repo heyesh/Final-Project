@@ -9,6 +9,7 @@ div.header {
   background: #808080;
   color: white;
   font-size: 15px;
+  height: 50px;
 }
 img {
   background-position: center;
@@ -26,10 +27,69 @@ div.contrast {
 ul {
   list-style: none;
   display: flex;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
 }
 li {
   margin: 0 20px;
   transition: 0.6s ease;
+}
+li a, .dropbtn {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+li.dropdown {
+  display: inline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 3px 6px;
+  background-repeat: no-repeat;
+  padding: 6px 10px 6px 20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
 }
 .button1 {
   background-color: rgb(0,0,0);
@@ -40,4 +100,7 @@ li {
 }
 .button1:hover {
   background-color: black;
+}
+.form {
+
 }

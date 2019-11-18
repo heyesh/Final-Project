@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+
+  <title>G-Tek</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-
-  <title>Hello World </title>
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -16,44 +18,67 @@
 
   <div class="contrast">
       <ul>
-        <li>Sale</li>
-        <li>New in</li>
-        <li>Dresses</li>
-        <li>Jeans</li>
-        <li>Shoes</li>
-      </ul>
-  </div>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Sale</a>
+          <div class="dropdown-content">
+             <a href="#">Link 1</a>
+             <a href="#">Link 2</a>
+             <a href="#">Link 3</a>
+           </div>
+         </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Dresses</a>
+          <div class="dropdown-content">
+             <a href="#">Link 1</a>
+             <a href="#">Link 2</a>
+             <a href="#">Link 3</a>
+           </div>
+         </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Shoes</a>
+          <div class="dropdown-content">
+             <a href="#">Link 1</a>
+             <a href="#">Link 2</a>
+             <a href="#">Link 3</a>
+           </div>
+         </li>
+        <li class="search-container">
+          <form action="/action_page.php">
+         <input type="text" placeholder="Search.." name="search">
+     </form>
+   </li>
+</ul>
+   </div>
 
   <!-- background image-->
 <section>
-  <img src="front.jpg" alt="Main image" usemap="#mainimage" width=800px>
+  <img src="front4.jpg" alt="Main image" usemap="#mainimage" width=100%>
 
-<map name="mainimage">
-  <area shape="circle" coords="200,200,50" alt="girl" href="women.htm">
+  <div id="buzz">
+    <h2><small>The Buzz</small><br>What are people saying?</h2>
+    <div class="row">
 
-</map>
-</section>
-  <!-- Slide Show -->
-<section>
-  <img class="mySlides" src="mainpage.jpg" style="width:50%">
-  <img class="mySlides" src="mainpage2.jpg" style="width:50%">
-  <img class="mySlides" src="img_chicago.jpg" style="width:50%">
-</section>
+        <div class="col-sm-4" "col-lg-4">
+          <p><strong>Name</strong></p><br>
+          <img src="front11.jpg" width="300" height="300">
+        </div>
 
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
+        <div class="col-sm-4" "col-lg-4">
+          <p><strong>Name</strong></p><br>
+          <img src="front12.jpg" width="300" height="300">
+        </div>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
-</script>
+        <div class="col-sm-4" "col-lg-4">
+        <p><strong>Name</strong></p><br>
+        <img src="front13.jpg" width="300" height="300">
+        </div>
+
+  </div>
+</div>
+
+
+  <form role="form">
+    <label for="email">SIgn up for updates</label>
+    <input type="text" name="email">
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>

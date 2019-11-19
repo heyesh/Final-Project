@@ -1,13 +1,57 @@
-<style>
-.fa {
-  padding: 20px;
+body {
+  color: rgb(65,75,86);
+  font-family: arial;
+  margin: 0px;
+}
+div.header {
+  padding: 1px;
+  text-align: center;
+  background: #808080;
+  color: white;
+  font-size: 15px;
+  height: 50px;
+}
+.header a.logo {
   font-size: 30px;
-  width: 50px;
+  font-weight: bold;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a{
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header-right {
+  float: right;
+}
+
+.content {
+  color: black;
+  align-content: center;
+}
+.social {
+  color: black;
+  align-content: center;
+}
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
 }
-
 .fa-facebook{
   background: #3B5998;
   color: white;

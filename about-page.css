@@ -6,7 +6,7 @@ body {
 div.header {
   padding: 1px;
   text-align: center;
-  background: #808080;
+  background: #9C9694;
   color: white;
   font-size: 15px;
   height: 50px;
@@ -15,7 +15,7 @@ div.header {
   font-size: 30px;
   font-weight: bold;
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -24,7 +24,7 @@ div.header {
 }
 .header a{
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -34,6 +34,22 @@ div.header {
 }
 .header-right {
   float: right;
+}
+div.contrast {
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+img {
+  background-position: center;
+  border-radius: 50%
+}
+div.row {
+  align-content: center;
+  color: black;
 }
 
 .content {
@@ -63,4 +79,12 @@ div.header {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  background-color: grey;
+  color: white;
+  text-align: center;
 }
